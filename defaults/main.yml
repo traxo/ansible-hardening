@@ -74,6 +74,8 @@ security_set_maximum_password_lifetime: no                   # V-71931
 security_rhel7_initialize_aide: no                           # V-71973
 
 ## Audit daemon (auditd)
+# Configure the system using auditd.
+security_rhel7_configure_auditd: yes                         # V-72079
 # Send audit records to a different system using audisp.
 #security_audisp_remote_server: '10.0.21.1'                  # V-72083
 # Encrypt audit records when they are transmitted over the network.
