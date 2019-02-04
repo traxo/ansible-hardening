@@ -80,7 +80,11 @@
 # Controls by Tag" section of the role documentation.
 - include_tasks: accounts.yml
 - include_tasks: aide.yml
+
 - include_tasks: auditd.yml
+  when:
+    - security_rhel7_configure_auditd | bool
+
 - include_tasks: auth.yml
 - include_tasks: file_perms.yml
 - include_tasks: graphical.yml
